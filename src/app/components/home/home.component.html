@@ -2,5 +2,18 @@
 
 <h2>Hello {{ name }} {{ lastName }}</h2>
 
-<input type="text" [placeholder]="message" [value]="name">
+<input type="text" [placeholder]="message" [(ngModel)]="name" />
+<input type="text" [placeholder]="message" [(ngModel)]="lastName" />
 <button [disabled]="isDisabled" (click)="sayHello()">Submit</button>
+
+<div *ngIf="isShort()">
+  <h2
+    [ngStyle]="{
+      color: 'blue',
+      'font-size.px': secretMessageFontSize,
+      'background-color': secretMessageBackgroundColor
+    }"
+  >
+    Your username is too short
+  </h2>
+</div>
