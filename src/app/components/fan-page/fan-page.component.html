@@ -28,6 +28,7 @@
 <div class="container">
   <div class="fan-list">
     <h2>Madrid Fans</h2>
+    <button (click)="addRandomFan('madrid')">Add Random Fan</button>
     <div *ngFor="let fan of madridFans; let i = index">
       <app-fan-item
         [fanProp]="fan"
@@ -39,6 +40,7 @@
 
   <div class="fan-list">
     <h2>Barcelona Fans</h2>
+    <button (click)="addRandomFan('barcelona')">Add Random Fan</button>
     <div *ngFor="let fan of barcelonaFans; let i = index">
         <app-fan-item
         [fanProp]="fan"
