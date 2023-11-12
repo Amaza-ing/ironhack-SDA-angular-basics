@@ -9,6 +9,7 @@ import { ShoppingListComponent } from './components/shopping-list/shopping-list.
 import { FanPageComponent } from './components/fan-page/fan-page.component';
 import { FanItemComponent } from './components/fan-item/fan-item.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { CoursesComponent } from './components/courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     ShoppingListComponent,
     FanPageComponent,
     FanItemComponent,
-    GalleryComponent
+    GalleryComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,

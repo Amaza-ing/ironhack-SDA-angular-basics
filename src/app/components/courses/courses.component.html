@@ -1,0 +1,14 @@
+<h1>Courses</h1>
+
+<button (click)="getCourses()">Get Courses</button>
+<br>
+<input type="text" placeholder="Write the course name" [(ngModel)]="courseName">
+<button (click)="postCourse()">Post Course</button>
+<button (click)="putCourse()">Put Course</button>
+<button (click)="deleteCourse()">Delete Course</button>
+
+<ul>
+  <li *ngFor="let course of courses">
+    <p>{{ course.course }} - {{ course.hours }}</p>
+  </li>
+</ul>
