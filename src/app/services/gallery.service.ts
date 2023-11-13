@@ -13,4 +13,8 @@ export class GalleryService {
   getPictures(): Observable<any> {
     return this.http.get<any>(`${this.API_URL}/photos?albumId=1`)
   }
+
+  getPicture(id: number): Observable<any> {
+    return this.http.get<any>(`${this.API_URL}/photos?id=${id}`)
+  }
 }

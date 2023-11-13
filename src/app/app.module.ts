@@ -10,6 +10,9 @@ import { FanPageComponent } from './components/fan-page/fan-page.component';
 import { FanItemComponent } from './components/fan-item/fan-item.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { CoursesComponent } from './components/courses/courses.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { GalleryDetailComponent } from './components/gallery-detail/gallery-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { CoursesComponent } from './components/courses/courses.component';
     FanPageComponent,
     FanItemComponent,
     GalleryComponent,
-    CoursesComponent
+    CoursesComponent,
+    NavbarComponent,
+    GalleryDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

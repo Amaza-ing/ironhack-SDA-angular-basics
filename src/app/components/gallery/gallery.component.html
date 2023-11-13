@@ -1,6 +1,8 @@
 <section class="gallery">
   <div class="picture" *ngFor="let picture of pictures">
-    <h2>{{ picture.title }}</h2>
-    <img [src]="picture.url" alt="">
+    <a [routerLink]="['/gallery', picture.id]">
+      <h2>{{ picture.title }}</h2>
+      <img [src]="picture.url" alt="">    
+    </a>
   </div>
 </section>

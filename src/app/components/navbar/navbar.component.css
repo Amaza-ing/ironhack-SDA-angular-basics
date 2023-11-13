@@ -1,0 +1,20 @@
+.nav-list {
+  background-color: blue;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;  
+}
+
+.nav-link {
+  margin: 10px;
+  padding: 10px;
+  background-color: gray;
+}
+
+a {
+  color: white;
+}
+
+a.active {
+  color: black;
+}
