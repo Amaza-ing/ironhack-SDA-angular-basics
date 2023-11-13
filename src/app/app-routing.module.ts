@@ -7,6 +7,7 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ShoppingListComponent } from './components/shopping-list/shopping-list.component';
 import { GalleryDetailComponent } from './components/gallery-detail/gallery-detail.component';
+import { ReactiveDrivenFormComponent } from './components/reactive-driven-form/reactive-driven-form.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: "shopping",
     component: ShoppingListComponent
+  },
+  {
+    path: "form",
+    component: ReactiveDrivenFormComponent
   }
 ]
 
